@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Artículos OWC e IoT</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            color: #005f73;
+            font-size: 1.3em;
+            margin-top: 0;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        .card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        .card li {
+            margin-bottom: 8px;
+        }
+        .source {
+            font-size: 0.8em;
+            color: #0077b6;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: #003459;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Avances en Comunicaciones Ópticas Inalámbricas (OWC) para IoT y 6G</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>1. OWC Híbrida para IoT (Teli et al.)</h2>
+            <p>Este artículo presenta un sistema híbrido de OWC que combina Comunicación por Luz Visible (VLC) y Comunicación por Cámara Óptica (OCC) para aplicaciones versátiles de IoT, mejorando la tasa de datos y la fiabilidad.</p>
+            <ul>
+                <li>Utiliza un único LED como transmisor y fotodiodos (PD) y cámaras como receptores.</li>
+                <li>Propone una modulación multinivel bipolar on-off keying.</li>
+                <li>Demuestra mejora en la tasa de datos (Rb), tasa de error de bits (BER) y tasa de éxito de recepción.</li>
+                <li>Logra hasta ~100 Mb/s en el enlace VLC y transmisión sin errores en OCC.</li>
+            </ul>
+            <p class="source">Fuente: Teli et al. - Hybrid Optical Wireless Communication for Versatile IoT Applications.</p>
+        </div>
+
+        <div class="card">
+            <h2>2. LiRF: RF Basada en Luz (Zhang et al.)</h2>
+            <p>Introduce LiRF, un transceptor que permite la transmisión fluida de señales de Radio Frecuencia (RF) a través de VLC para dispositivos IoT, abordando el desajuste entre VLC y RF.</p>
+            <ul>
+                <li>Permite comunicación bidireccional VLC utilizando tarjetas de interfaz de red (NICs) WiFi.</li>
+                <li>Soporta flujos de datos TCP/IP a 750 Mbps con un transceptor SLD-PIN y 600 Mbps con LED-PIN.</li>
+                <li>Es el primer sistema VLC bidireccional en tiempo real que utiliza NICs WiFi, logrando tasas cercanas a Gbps.</li>
+                <li>Facilita la integración de VLC en redes IoT existentes.</li>
+            </ul>
+            <p class="source">Fuente: Zhang et al. - LiRF: Light-Based Wireless Communications Supporting Ubiquitous Radio Frequency Signals.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. Visión y Tecnologías Clave de 6G (Alsabah et al.)</h2>
+            <p>Esta encuesta exhaustiva revisa la evolución hacia las redes 6G, identificando indicadores de rendimiento y tecnologías habilitadoras clave para futuras redes inalámbricas.</p>
+            <ul>
+                <li>Objetivos de 6G: tasas de datos >100 Gbps, latencia <1ms, alta fiabilidad, conectividad masiva e inteligencia.</li>
+                <li>Tecnologías clave: Superficies Inteligentes Reconfigurables (RIS), OWC, THz, IA/ML, MIMO masivo, redes no terrestres.</li>
+                <li>OWC se considera una tecnología prometedora para 6G debido a su amplio espectro y seguridad.</li>
+                <li>Aborda desafíos técnicos y aplicaciones potenciales como telepresencia holográfica.</li>
+            </ul>
+            <p class="source">Fuente: Alsabah et al. - 6G Wireless Communications Networks: A Comprehensive Survey.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. OWC para Diversos Dominios IoT (Celik et al.)</h2>
+            <p>Este artículo ofrece una visión "top-down" del potencial de OWC en cuatro dominios principales de IoT: Terrestre (IoTT), Subacuático (IoWT), Biomédico (IoBT) y Subterráneo (IoGT).</p>
+            <ul>
+                <li>Analiza cómo OWC puede complementar, reemplazar o coexistir con sistemas RF existentes en cada dominio.</li>
+                <li>Modalidades OWC: FSO (espacio libre), VLC (luz visible), OCC (cámara óptica).</li>
+                <li>Destaca prototipos y productos COTS (comerciales disponibles) existentes, mostrando la viabilidad de OWC-IoT.</li>
+                <li>Discute desafíos de comunicación y networking específicos para cada entorno IoT.</li>
+            </ul>
+            <p class="source">Fuente: Celik et al. - A Top-Down Survey on Optical Wireless Communications for the Internet of Things.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Redes Híbridas OWC: Tendencias y Desafíos (Chowdhury et al.)</h2>
+            <p>Esta encuesta revisa el estado del arte de las redes híbridas ópticas inalámbricas, incluyendo combinaciones RF/Ópticas y Ópticas/Ópticas, para sistemas 5G y más allá.</p>
+            <ul>
+                <li>Tipos de hibridación: RF/VLC, RF/LiFi, RF/OCC, RF/FSO, y combinaciones ópticas como VLC/OCC.</li>
+                <li>Beneficios: Mejora de throughput, fiabilidad, eficiencia energética y cobertura.</li>
+                <li>Desafíos: Selección de red, handover, compartición de recursos, planificación de paquetes y balanceo de carga.</li>
+                <li>Aplicaciones: Interiores, vehiculares, localización, espacio libre y submarinas.</li>
+            </ul>
+            <p class="source">Fuente: Chowdhury et al. - Optical Wireless Hybrid Networks: Trends, Opportunities, Challenges, and Research Directions.</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Optimización de Enlaces VLC y OCC (Teli et al.)</h2>
+            <p>El sistema híbrido propuesto por Teli et al. no solo transmite datos, sino que optimiza el rendimiento de los enlaces individuales VLC y OCC mediante técnicas específicas.</p>
+            <ul>
+                <li>La modulación multinivel duplica el ancho de banda efectivo del LED.</li>
+                <li>Se optimiza la potencia óptica recibida para mejorar el rendimiento.</li>
+                <li>Se demuestra que el rendimiento de los enlaces VLC y OCC puede ser independiente, a diferencia de otros enfoques.</li>
+                <li>Se logra transmisión sin errores para el enlace OCC en diversas condiciones de Rb y solapamiento de amplitud.</li>
+            </ul>
+            <p class="source">Fuente: Teli et al. - Hybrid Optical Wireless Communication for Versatile IoT Applications.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Integración de VLC y RF en LiRF (Zhang et al.)</h2>
+            <p>LiRF de Zhang et al. se enfoca en resolver el "mismatch" entre la naturaleza unidireccional de los componentes VLC (LEDs/PDs) y la transmisión bidireccional de RF, usando NICs WiFi.</p>
+            <ul>
+                <li>Utiliza un circulador para gestionar los puertos RF bidireccionales con dispositivos ópticos unidireccionales.</li>
+                <li>Convierte señales RF de alta frecuencia a bandas de FI (Frecuencia Intermedia) adecuadas para transceptores ópticos.</li>
+                <li>Demuestra la viabilidad de transmitir señales WiFi 802.11ax a través de VLC.</li>
+                <li>Supera desafíos como la interferencia de frecuencia durante la conversión y el diseño de PCB integrado.</li>
+            </ul>
+            <p class="source">Fuente: Zhang et al. - LiRF: Light-Based Wireless Communications Supporting Ubiquitous Radio Frequency Signals.</p>
+        </div>
+
+        <div class="card">
+            <h2>8. OWC como Componente Integral de 6G (Alsabah et al.)</h2>
+            <p>El estudio de Alsabah et al. posiciona a OWC como una de las tecnologías habilitadoras fundamentales para las redes 6G, destacando sus contribuciones únicas a los objetivos de 6G.</p>
+            <ul>
+                <li>OWC (VLC, LiFi, OCC, FSO) puede explotar el espectro de THz y visible, ofreciendo un ancho de banda masivo.</li>
+                <li>Contribuye a la seguridad de la capa física debido a la naturaleza confinada de la luz.</li>
+                <li>Puede utilizarse en combinación con RIS para mejorar la cobertura y eficiencia.</li>
+                <li>Esencial para aplicaciones de IoE (Internet of Everything) y comunicación de latencia ultra baja y ultra alta fiabilidad.</li>
+            </ul>
+            <p class="source">Fuente: Alsabah et al. - 6G Wireless Communications Networks: A Comprehensive Survey.</p>
+        </div>
+
+        <div class="card">
+            <h2>9. Estandarización y Despliegue de OWC en IoT (Celik et al.)</h2>
+            <p>Celik et al. enfatizan la necesidad de estandarización y abordan los aspectos prácticos del despliegue de OWC en diversos escenarios IoT, más allá de la capa física.</p>
+            <ul>
+                <li>Revisan estándares existentes (ej. IEEE 802.11bb, IEEE 802.15.7) y sus limitaciones para OWC-IoT.</li>
+                <li>Proponen que los futuros esfuerzos de estandarización deben considerar la hibridación y los entornos específicos (subacuático, biomédico, etc.).</li>
+                <li>Señalan la importancia de una pila de protocolos completa para OWC-IoT, no solo PHY/MAC.</li>
+                <li>Presentan productos COTS que demuestran la madurez de ciertas tecnologías OWC para aplicaciones IoTT.</li>
+            </ul>
+            <p class="source">Fuente: Celik et al. - A Top-Down Survey on Optical Wireless Communications for the Internet of Things.</p>
+        </div>
+        
+        <div class="card">
+            <h2>10. Desafíos y Futuro de las Redes Híbridas OWC (Chowdhury et al.)</h2>
+            <p>El artículo de Chowdhury et al. no solo describe las oportunidades de las redes híbridas OWC, sino que también detalla los desafíos técnicos y las direcciones de investigación futuras.</p>
+            <ul>
+                <li>Desafíos clave: Gestión de la movilidad y handover entre redes ópticas y RF, selección de red eficiente, mitigación de interferencias.</li>
+                <li>Balanceo de carga y compartición de recursos son cruciales en sistemas híbridos densos.</li>
+                <li>Necesidad de protocolos de acceso al medio (MAC) específicos para escenarios híbridos.</li>
+                <li>Investigación futura: Redes de backhaul híbridas, seguridad física mejorada, y sistemas OWC subacuáticos e intra-corporales híbridos.</li>
+            </ul>
+            <p class="source">Fuente: Chowdhury et al. - Optical Wireless Hybrid Networks: Trends, Opportunities, Challenges, and Research Directions.</p>
+        </div>
+    </div>
+</body>
+</html>
